@@ -3,11 +3,15 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Button from "../../atoms/Button";
 
+export const HEADER_HEIGHT = "25px";
+
 const HeaderWrapper = styled.header`
   background-color: #f2f2f2;
   padding: 20px;
   display: flex;
-  position: fixed;
+  position: sticky;
+  height: ${HEADER_HEIGHT};
+  align-items: center;
   top: 0;
   left: 0;
   width: 100%;
