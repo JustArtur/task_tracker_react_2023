@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import Button from "../../atoms/Button";
 
 const TableItem = styled.th`
   padding: 5px;
 `;
 const ProjectsTableRow = ({ project }) => {
-  const { name, description, createdAt } = project;
+  const { name, description, createdAt, id } = project;
 
   return (
     <tr>
@@ -14,7 +15,9 @@ const ProjectsTableRow = ({ project }) => {
       <TableItem>{description}</TableItem>
       <TableItem>{createdAt}</TableItem>
       <TableItem>
-        <Button label="Tasks" color="blue" />
+        <Link to={`/project/${id}`}>
+          <Button label="Tasks" color="blue" />
+        </Link>
       </TableItem>
       <TableItem>
         <Button label="Edit" color="green" />

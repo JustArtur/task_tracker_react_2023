@@ -8,8 +8,8 @@ import Button from "../atoms/Button";
 
 const MainContent = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex: 1 0 auto;
+  flex-direction: column;
   min-height: calc(100vh - ${HEADER_HEIGHT} - ${FOOTER_HEIGHT});
   overflow: auto;
 `;
