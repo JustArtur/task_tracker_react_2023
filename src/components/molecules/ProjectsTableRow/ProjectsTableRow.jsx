@@ -1,24 +1,27 @@
 import React from "react";
-// import styled from "styled-components";
+import styled from "styled-components";
 import Button from "../../atoms/Button";
 
+const TableItem = styled.th`
+  padding: 5px;
+`;
 const ProjectsTableRow = ({ project }) => {
   const { name, description, createdAt } = project;
 
   return (
     <tr>
-      <th>{name}</th>
-      <th>{description}</th>
-      <th>{createdAt}</th>
-      <th>
+      <TableItem>{name}</TableItem>
+      <TableItem>{description}</TableItem>
+      <TableItem>{createdAt}</TableItem>
+      <TableItem>
         <Button label="Tasks" color="blue" />
-      </th>
-      <th>
+      </TableItem>
+      <TableItem>
         <Button label="Edit" color="green" />
-      </th>
-      <th>
+      </TableItem>
+      <TableItem>
         <Button label="Destroy" color="red" />
-      </th>
+      </TableItem>
     </tr>
   );
 };
