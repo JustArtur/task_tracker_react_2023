@@ -6,7 +6,7 @@ import Button from "../../atoms/Button";
 export const HEADER_HEIGHT = "25px";
 
 const HeaderWrapper = styled.header`
-  background-color: #f2f2f2;
+  background-color: cadetblue;
   padding: 20px;
   display: flex;
   position: sticky;

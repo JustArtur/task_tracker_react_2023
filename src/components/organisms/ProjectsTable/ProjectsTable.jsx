@@ -4,17 +4,24 @@ import ProjectTableRow from "../../molecules/ProjectsTableRow";
 import Projects from "./mockProjects";
 
 const Table = styled.table`
-  width: 100%;
+  width: 90%;
+  margin-top: 1rem;
+`;
+
+const TableHeader = styled.tr`
+  margin: 10px;
+  font-weight: bold;
+  font-size: large;
 `;
 
 const ProjectsTable = () => {
   return (
     <Table>
-      <tr>
+      <TableHeader>
         <th> Name </th>
         <th> Description </th>
         <th> Created At </th>
-      </tr>
+      </TableHeader>
       <tbody>
         {Projects.map((project) => (
           <ProjectTableRow key={project.id} project={project} />

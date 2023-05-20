@@ -7,7 +7,7 @@ const FooterWrapper = styled.footer`
   display: flex;
   justify-content: end;
   align-items: center;
-  background-color: #f2f2f2;
+  background-color: cadetblue;
   padding: 1rem;
   height: ${FOOTER_HEIGHT};
   right: 0;

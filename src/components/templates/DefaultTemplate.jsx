@@ -42,7 +42,7 @@ const DefaultTemplate = ({ children }) => {
       <Header />
       {showScrollButton && (
         <ButtonWrapper>
-          <Button label="Scroll to top" onClick={scrollToTop} color="orange" />
+          <Button label="Scroll to top" onClick={scrollToTop} color="cadetBlue" />
         </ButtonWrapper>
       )}
       <MainContent>{children}</MainContent>
