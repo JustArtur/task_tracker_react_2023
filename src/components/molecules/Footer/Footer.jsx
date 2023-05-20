@@ -1,13 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 
+export const FOOTER_HEIGHT = "20px";
+
 const FooterWrapper = styled.footer`
-  background-color: #f2f2f2;
-  padding: 20px;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  display: flex;
   justify-content: end;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 1rem;
+  height: ${FOOTER_HEIGHT};
+  right: 0;
+  left: 0;
   position: absolute;
 `;
 
