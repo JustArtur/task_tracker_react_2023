@@ -8,8 +8,8 @@ import Button from "../atoms/Button";
 
 const MainContent = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex: 1 0 auto;
+  flex-direction: column;
   min-height: calc(100vh - ${HEADER_HEIGHT} - ${FOOTER_HEIGHT});
   overflow: auto;
 `;
@@ -42,7 +42,7 @@ const DefaultTemplate = ({ children }) => {
       <Header />
       {showScrollButton && (
         <ButtonWrapper>
-          <Button label="Scroll to top" onClick={scrollToTop} color="orange" />
+          <Button label="Scroll to top" onClick={scrollToTop} color="cadetBlue" />
         </ButtonWrapper>
       )}
       <MainContent>{children}</MainContent>
