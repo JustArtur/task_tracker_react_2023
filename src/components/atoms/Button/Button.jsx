@@ -14,9 +14,9 @@ const StyledButton = Styled.button(
   `,
 );
 
-const Button = ({ label, onClick = () => {}, disabled = false, color = "" }) => {
+const Button = ({ label, onClick = () => {}, disabled = false, color = "", type }) => {
   return (
-    <StyledButton disabled={disabled} onClick={onClick} color={color}>
+    <StyledButton disabled={disabled} onClick={onClick} color={color} type={type}>
       {label}
     </StyledButton>
   );

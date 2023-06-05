@@ -30,7 +30,12 @@ const ProjectsTableRow = ({ project }) => {
         </TableItem>
       </tr>
       {isDestroyModalOpen && (
-        <DestroyProjectWindow isOpen={isDestroyModalOpen} projectName={name} setIsOpen={setIsDestroyModalOpen} />
+        <DestroyProjectWindow
+          isOpen={isDestroyModalOpen}
+          projectName={name}
+          setIsOpen={setIsDestroyModalOpen}
+          id={id}
+        />
       )}
     </>
   );

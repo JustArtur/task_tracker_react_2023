@@ -1,4 +1,5 @@
 import React from "react";
+// import/no-extraneous-dependencies
 import Modal from "react-modal";
 
 import { CloseButton, modalStyles } from "./styled";
