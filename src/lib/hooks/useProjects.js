@@ -1,7 +1,7 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { useQuery } from "@apollo/client";
 
-import Projects from "../../praphql/queries/projects";
+import Projects from "../../graphql/queries/projects";
 
 const useProjects = () => {
   const { data, loading, error } = useQuery(Projects, {

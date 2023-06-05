@@ -1,7 +1,7 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { useMutation } from "@apollo/client";
-import projects from "../../praphql/queries/projects";
-import createProject from "../../praphql/queries/createProject";
+import projects from "../../graphql/queries/projects";
+import createProject from "../../graphql/queries/createProject";
 
 const useCreateProject = () => {
   const [mutation, mutationState] = useMutation(createProject, {
