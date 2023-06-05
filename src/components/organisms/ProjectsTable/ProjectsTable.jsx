@@ -1,7 +1,6 @@
 import styled from "styled-components";
-// import Button from "../../atoms/Button";
 import ProjectTableRow from "../../molecules/ProjectsTableRow";
-import Projects from "./mockProjects";
+import useProjects from "../../../lib/hooks/useProjects";
 
 const Table = styled.table`
   width: 90%;
@@ -15,6 +14,8 @@ const TableHeader = styled.tr`
 `;
 
 const ProjectsTable = () => {
+  const { projects } = useProjects();
+
   return (
     <Table>
       <TableHeader>
@@ -23,7 +24,7 @@ const ProjectsTable = () => {
         <th> Created At </th>
       </TableHeader>
       <tbody>
-        {Projects.map((project) => (
+        {projects.map((project) => (
           <ProjectTableRow key={project.id} project={project} />
         ))}
       </tbody>
