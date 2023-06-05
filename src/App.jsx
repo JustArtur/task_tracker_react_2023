@@ -7,7 +7,7 @@ import Info from "./pages/info";
 import Project from "./pages/project";
 
 const client = new ApolloClient({
-  uri: process.env.API,
+  uri: process.env.REACT_API,
   cache: new InMemoryCache(),
 });
 
